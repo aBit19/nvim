@@ -36,4 +36,6 @@ wk.add({
   { "<leader><leader>ghtc", "<cmd>GHCreateThread<cr>", desc = "Create" },
   { "<leader><leader>ghtn", "<cmd>GHNextThread<cr>", desc = "Next" },
   { "<leader><leader>ghtt", "<cmd>GHToggleThread<cr>", desc = "Toggle" },
+  { "<leader><leader>j", group = "Jdtls" },
+  { "<leader><leader>jw", "<cmd>JdtWipeDataAndRestart<cr>", desc = "Wipe Jdtls Data" },
 })
