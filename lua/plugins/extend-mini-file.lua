@@ -1,5 +1,5 @@
 return {
-  "echasnovsku/mini.files",
+  "echasnovski/mini.files",
   keys = {
     {
       "<leader>e",
