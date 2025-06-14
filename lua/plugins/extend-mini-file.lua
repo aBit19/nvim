@@ -9,6 +9,13 @@ return {
       desc = "Open mini.files (directory of current file)",
     },
     {
+      "<leader>mc",
+      function()
+        require("mini.files").open("~/.config/nvim/lua/", true)
+      end,
+      desc = "Open mini.files (in the nvim lua config)",
+    },
+    {
       "<leader>E",
       function()
         require("mini.files").open(vim.uv.cwd(), true)
