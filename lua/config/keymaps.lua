@@ -26,6 +26,13 @@ wk.add({
   { "<leader>ghpt", "<cmd>GHOpenToPR<cr>", desc = "Open To" },
   { "<leader>ghpz", "<cmd>GHCollapsePR<cr>", desc = "Collapse" },
   { "<leader>ghr", group = "Review" },
+  {
+    "<leader>gj",
+    function()
+      require("telescope").extensions.gitmoji.gitmoji()
+    end,
+    desc = "Commit with gitmoji",
+  },
   { "<leader>ghrb", "<cmd>GHStartReview<cr>", desc = "Begin" },
   { "<leader>ghrc", "<cmd>GHCloseReview<cr>", desc = "Close" },
   { "<leader>ghrd", "<cmd>GHDeleteReview<cr>", desc = "Delete" },
