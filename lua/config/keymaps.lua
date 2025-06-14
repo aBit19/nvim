@@ -33,6 +33,13 @@ wk.add({
     end,
     desc = "Commit with gitmoji",
   },
+  {
+    "<leader>ga",
+    function()
+      require("telescope").extensions.gitmoji.gitmoji_amend()
+    end,
+    desc = "Amend with gitmoji",
+  },
   { "<leader>ghrb", "<cmd>GHStartReview<cr>", desc = "Begin" },
   { "<leader>ghrc", "<cmd>GHCloseReview<cr>", desc = "Close" },
   { "<leader>ghrd", "<cmd>GHDeleteReview<cr>", desc = "Delete" },

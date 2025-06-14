@@ -1,5 +1,5 @@
 return {
-  "olacin/telescope-gitmoji.nvim",
+  "aBit19/telescope-gitmoji.nvim",
   config = function()
     require("telescope").load_extension("gitmoji")
   end,
