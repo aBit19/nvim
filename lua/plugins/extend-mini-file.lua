@@ -9,7 +9,7 @@ return {
       desc = "Open mini.files (directory of current file)",
     },
     {
-      "<leader>mc",
+      "<leader>fc",
       function()
         require("mini.files").open("~/.config/nvim/lua/", true)
       end,
