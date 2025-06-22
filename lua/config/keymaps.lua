@@ -34,3 +34,19 @@ wk.add({
     desc = "Go to subject tests or create new ones",
   },
 })
+
+local path = LazyVim.root.cwd() .. "/gradlew"
+local fl = io.open(path, "r")
+if fl ~= nil then
+  io.close(fl)
+
+  wk.add({
+    {
+      "<leader>cb",
+      function()
+        require("gradlew-tasks").get_tasks({})
+      end,
+      desc = "Get gradle tasks",
+    },
+  })
+end
